@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
+@import url('./node_modules/sweetalert2/dist/sweetalert2.min.css');
+@import url('./node_modules/animate.css/animate.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.category-btn{
+  @apply border border-primary-700 px-4 py-1 rounded-sm transition-colors duration-300 w-full whitespace-nowrap
+}
+
+.category-btn.active{
+  @apply bg-secondary-700 text-secondary-100
+}
+
+.btn_hover:hover .pointer-events-none {
+  stroke: white;
+  
+};
+
+
+.swal2-popup{
+ @apply border-0 rounded-none !important;
+}
+
+.swal2-confirm{
+    @apply  bg-secondary-700 text-white border-0 rounded-none !important;
+}
+
+.swal2-cancel{
+    @apply  bg-secondary-700 text-white border-0 rounded-none  !important;
+}
