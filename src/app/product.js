@@ -94,7 +94,7 @@ export const addCart_handler = (event) => {
 
             const lastchild_position = document.querySelector(".cart-item:last-child")?.getBoundingClientRect();
 
-            const def_top = lastchild_position ? lastchild_position.top + 30 : cart_body.getBoundingClientRect().top;
+            const def_bottom = lastchild_position ? lastchild_position.bottom + 30 : cart_body.getBoundingClientRect().top;
             const def_left = lastchild_position ? lastchild_position.left + 30 : cart_body.getBoundingClientRect().left;
 
             keyframe = [{
@@ -102,7 +102,7 @@ export const addCart_handler = (event) => {
                 left: current_img_pos.left + "px",
             },
             {
-                top: def_top + "px",
+                top: def_bottom + "px",
                 left: def_left + "px",
                 height: 10 + "px",
                 rotate: "2turn",

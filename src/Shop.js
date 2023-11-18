@@ -36,7 +36,6 @@ class Shop {
 
 
     init() {
-        console.log("Start.......");
         this.observer();
         this.intiRender();
         this.listerers();
